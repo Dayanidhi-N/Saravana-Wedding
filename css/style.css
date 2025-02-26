@@ -549,7 +549,7 @@ body{
       z-index: 5;
   }
   .navbar-link.active{
-        height: 270px;
+        height: 220px;
         background-color: #fff;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         gap: 0px !important;
