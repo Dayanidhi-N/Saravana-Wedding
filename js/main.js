@@ -67,7 +67,7 @@
     const interval = setInterval(updateCountdown, 1000);
     updateCountdown();
 
- /*** js for footerbutton ***/
+ /*** js for scrolltobutton ***/
 
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
@@ -86,3 +86,29 @@ scrollToTopBtn.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+
+ /*** js for modelbox ***/
+
+    const dialog = document.getElementById("save_event");
+
+    document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(function (){
+        dialog.showModal();
+      }, 2000); // 2-second delay
+    });
+
+    function closeDialog(){
+      dialog.close();
+    }
+
+    // document.addEventListener('DOMContentLoaded', function (){
+    // if (!localStorage.getItem('dialogShown')) {
+    //     setTimeout(function () {
+    //         document.getElementById('save_event').showModal();
+    //         localStorage.setItem('dialogShown', 'true');
+    //     }, 2000); // 2-second delay
+    //   }
+    // });
+
+   
