@@ -13,12 +13,12 @@ body{
 }
 
  /* -----------------------------------------------------------------------
-   2. HOME 
+     HOME 
 ------------------------------------------------------------------------- */
 
 #home{
     position: relative;
-    height: calc(100vh - 90px);
+    height: 100vh;
     min-height: 700px;
     overflow: hidden;
 }
@@ -199,7 +199,7 @@ body{
 }
 
  /* -----------------------------------------------------------------------
-   2. STORY TIMELINE
+   STORY TIMELINE
 ------------------------------------------------------------------------- */
 
 .storysection{
@@ -360,7 +360,7 @@ body{
 }
 
  /* -----------------------------------------------------------------------
-   2. CELEBRATE BGIMAGE
+    CELEBRATE BGIMAGE
 ------------------------------------------------------------------------- */
 .celeb-bgimage:before{
     content: "";
@@ -400,7 +400,7 @@ body{
 }
 
  /* -----------------------------------------------------------------------
-   2. WEDDING EVENTS
+   WEDDING EVENTS
 ------------------------------------------------------------------------- */
 .event-box{
     max-width: 1200px;
@@ -472,8 +472,9 @@ body{
     padding-left: 9px;
     color: #3e3e3e;
 }
+
  /* -----------------------------------------------------------------------
-   2. NAVIGATION
+     NAVIGATION
 ------------------------------------------------------------------------- */
 
 .navhead{
@@ -587,7 +588,7 @@ body{
 }
 
  /* -----------------------------------------------------------------------
-   2. COUPLES
+     COUPLES
 ------------------------------------------------------------------------- */
 
 .couples{
@@ -671,6 +672,68 @@ body{
 }
 
  /* -----------------------------------------------------------------------
+ MODEL BOX
+------------------------------------------------------------------------- */
+
+#save_event{
+  border: none;
+  border-radius: 6px;
+  padding: 0;
+  max-width: 435px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  overflow: hidden;
+  background: #7F7FD5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: fixed;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+.close-btn{
+    position: absolute;
+    top: 3px;
+    right: 15px;
+    background: none;
+    font-size: 33px;
+    cursor: pointer;
+    color: white;
+    line-height: 1;
+    border: none !important;
+}
+.close-btn:hover{
+  color: #f0f0f0;;
+}
+.model_wrapper{
+    padding: 45px;
+    text-align: center;
+}
+.model_wrapper p{
+    margin: 0 0 20px;
+    font-size: 33px;
+    line-height: 43px;
+    font-family: "Great Vibes", cursive;
+    color: white;
+}
+.save-btn{
+    color: #413d3d;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 26px;
+    border: none;
+    background-color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.save-btn:hover{
+  background-color: #f0f0f0;
+  color: #4c7c72;
+}
+
+ /* -----------------------------------------------------------------------
    FOOTER
 ------------------------------------------------------------------------- */
 .footer-row{
@@ -742,6 +805,7 @@ body{
 #scrollToTopBtn:active{
   background-color: #4b7a71;
 }
+
  /* -----------------------------------------------------------------------
    COUNTDOWN TIMER
 ------------------------------------------------------------------------- */
@@ -1081,6 +1145,26 @@ body{
     .storysection,.bgimage,.social-icon,.footer-row,
     .navbar-link li:nth-child(3){
         display: none;
+    }
+    .save-btn{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .model_wrapper p{
+        margin: 0px 0 15px;
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .close-btn{
+        top: 1px;
+        right: 12px;
+        font-size: 30px;
+    }
+    .model_wrapper{
+        padding: 35px;
+    }
+    #save_event{
+        min-width: 333px;
     }
 }
 
