@@ -913,6 +913,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 .contact-row .form-wrap{
     position: relative;
@@ -933,6 +934,8 @@ body{
     -o-border-radius: 3px;
     -ms-border-radius: 3px;
     border-radius: 3px;
+    outline: none;
+    box-sizing: border-box;
 }
 .sendwish form textarea{
     height: 150px;
